@@ -1,0 +1,7 @@
+[user]
+	name = Wenley Tong
+	email = wenley.tong@gmail.com
+[alias]
+	co = checkout
+[core]
+	editor = /usr/bin/vim
