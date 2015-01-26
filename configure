@@ -1,18 +1,28 @@
 #!/bin/bash
 
-# Install utilities
+echo "Getting command-line utilities..."
 brew install wget
+brew install gpg
+brew install brew-cask
 # brew install objective-caml
 # brew install opam
 
-# Install applications
-brew install brew-cask
+echo
+echo "Getting applications..."
 brew cask install slate
 
 # Get git-prompt.sh
-wget -O ~/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
+echo
+if [ ! -f ~/.git-prompt.sh ]; then
+  echo "Fetching git-prompt.sh"
+  wget -O ~/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
+else
+  echo "git-prompt.sh already downloaded"
+fi
 
 # Link config files
+echo
+echo "Linking config files"
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 ln -sf $DIR/bashrc ~/.bashrc
