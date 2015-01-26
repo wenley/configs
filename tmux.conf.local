@@ -1,0 +1,6 @@
+
+
+bind-key enter select-layout even-horizontal
+
+unbind-key k
+unbind -n C-k
