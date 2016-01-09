@@ -5,13 +5,18 @@ source ~/.git-prompt.sh
 alias l="ls -la"
 alias c="clear"
 alias v="vim"
+
 alias gap="git add -p"
+alias gb="git branch"
+alias gco="git checkout"
 alias gcv="git commit --verbose"
 alias gcp="git checkout -p"
 alias gcam="git commit --amend"
 alias gs="git status"
 alias gl="git log"
 alias glp="git log -p"
+
+alias pe="python -m pundle"
 
 function PWD {
   python ~/.python_pwd | sed 's/ /\//g'
