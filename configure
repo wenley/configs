@@ -47,4 +47,5 @@ ln -sf $DIR/gitconfig ~/.gitconfig
 ln -sf $DIR/python_pwd ~/.python_pwd
 ln -sf $DIR/tmux.conf.local ~/.tmux.conf.local
 ln -sf $DIR/vimrc.local ~/.vimrc.local
+ln -sf $DIR/git-completion.bash ~/.git-completion.bash
 
