@@ -2,14 +2,14 @@
 import os
 
 pwd = os.getcwd()
-elems = pwd.replace('/Users/wenley', '~').strip('/').split('/')
+elems = pwd.replace('/Users/wenley.tong', '~').strip('/').split('/')
 
 # If in Dev, print project and last
 # If in Home, replace with ~
 # else, print last two
 
-if 'Development' in elems:
-  i = elems.index('Development')
+if 'workspace' in elems:
+  i = elems.index('workspace')
   project_dirs = elems[i+1:]
 
   if len(project_dirs) > 2:

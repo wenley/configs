@@ -11,3 +11,5 @@ export TERM=xterm-256color
 export PATH="$HOME/.cargo/bin:$PATH"
 
 source ~/.git-completion.bash
+
+export PATH="/usr/local/opt/node@12/bin:$PATH"

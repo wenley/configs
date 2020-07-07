@@ -16,11 +16,21 @@ alias grc="git rebase --continue"
 alias grim="git rebase -i main"
 alias grid="git rebase -i development"
 alias gs="git status"
+alias d="git diff development...HEAD --name-status"
+alias dm="git diff master...HEAD --name-status"
 
 # Ruby things
 alias be="bundle exec"
 alias bees="bundle exec rspec"
 alias beer="bundle exec rake"
+alias r="d | awk '\$2 ~ /.rb$/ || \$2 ~ /.rake$/ { print \$2 }' | xargs bundle exec rubocop -a"
+alias s="d | awk '\$2 ~ /_spec.rb$/ { print \$2 }' | xargs bin/rspec"
+alias rdm="dm | awk '\$2 ~ /.rb$/ || \$2 ~ /.rake$/ { print \$2 }' | xargs bundle exec rubocop -a"
+alias sdm="dm | awk '\$2 ~ /_spec.rb$/ { print \$2 }' | xargs bin/rspec"
+
+# From Gusto
+alias y="d | awk '\$2 ~ /^frontend.*_spec.js/ { print \$2 }' | xargs yarn test"
+alias ready="bundle && yarn && bin/spring stop && bin/rails db:setup && bin/spring start && say ready"
 
 alias pe="python -m pundle"
 alias python=python3
