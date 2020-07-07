@@ -13,15 +13,15 @@ if 'Development' in elems:
   project_dirs = elems[i+1:]
 
   if len(project_dirs) > 2:
-    print "%s..%s" % (project_dirs[0], project_dirs[-1])
+    print("%s..%s" % (project_dirs[0], project_dirs[-1]))
   elif len(project_dirs) == 1:
-    print project_dirs[0]
+    print(project_dirs[0])
   else:
-    print "%s/%s" % (elems[-2], elems[-1])
+    print("%s/%s" % (elems[-2], elems[-1]))
 elif len(elems) < 2:
   if elems[0]:
-    print elems[0]
+    print(elems[0])
   else:
-    print '/'
+    print('/')
 else:
-  print elems[-2], elems[-1]
+  print("%s/%s" % (elems[-2], elems[-1]))
