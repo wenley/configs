@@ -17,9 +17,10 @@ alias gl="git log"
 alias glp="git log -p"
 
 alias pe="python -m pundle"
+alias python=python3
 
 function PWD {
-  python ~/.python_pwd | sed 's/ /\//g'
+  python ~/.python_pwd
 }
 
 PS1='\u@\h $(PWD)\[\033[0;32m\]$(__git_ps1 " %s")\[\033[00m\] \$ '
