@@ -3,5 +3,10 @@
 	email = wenley.tong@gmail.com
 [alias]
 	co = checkout
+	di = diff
+	dic = diff --cached
+	lg = log -p
 [core]
 	editor = /usr/bin/vim
+[push]
+	default = current
