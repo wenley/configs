@@ -10,3 +10,9 @@
 	editor = /usr/bin/vim
 [push]
 	default = current
+[merge]
+	conflictstyle = diff3
+[credential]
+	helper = osxkeychain
+[pull]
+	ff = only
