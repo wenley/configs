@@ -9,7 +9,7 @@ brew install brew-cask
 
 echo
 echo "Getting applications..."
-brew cask install slate
+brew cask install rectangle
 
 echo
 echo "Checking rvm version..."
@@ -45,7 +45,6 @@ ln -sf $DIR/bashrc ~/.bashrc
 ln -sf $DIR/bash_profile ~/.bash_profile
 ln -sf $DIR/gitconfig ~/.gitconfig
 ln -sf $DIR/python_pwd ~/.python_pwd
-ln -sf $DIR/slate ~/.slate
 ln -sf $DIR/tmux.conf.local ~/.tmux.conf.local
 ln -sf $DIR/vimrc.local ~/.vimrc.local
 
