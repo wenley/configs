@@ -3,7 +3,6 @@
 echo "Getting command-line utilities..."
 brew install wget
 brew install gpg
-brew install brew-cask
 # brew install objective-caml
 # brew install opam
 
