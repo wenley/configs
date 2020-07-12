@@ -31,7 +31,8 @@ function PWD {
 
 PS1='\u@\h $(PWD)\[\033[0;32m\]$(__git_ps1 " %s")\[\033[00m\] \$ '
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
 VISUAL=/usr/bin/vim
 EDITOR=/usr/bin/vim
 
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
