@@ -4,3 +4,5 @@ bind-key enter select-layout even-horizontal
 
 unbind-key k
 unbind -n C-k
+
+source-file ~/.tmux-themes/dark.conf

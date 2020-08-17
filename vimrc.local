@@ -4,3 +4,27 @@ nnoremap <leader>c :bp\|bd #<CR>
 set clipboard=unnamed
 
 colorscheme solarized
+
+function! Chomp(string)
+    return substitute(a:string, '\n\+$', '', '')
+endfunction
+
+let tmuxtheme = (split(Chomp(system('tmux show-environment -g TMUX_THEME')), "=") + ["", "dark"])[1]
+if tmuxtheme == "dark"
+    set background=dark
+else
+    set background=light
+end
+
+function! Dark()
+    set background=dark
+    silent !sh ~/.tmux-themes/dark.sh
+endfunction
+
+function! Light()
+    set background=light
+    silent !sh ~/.tmux-themes/light.sh
+endfunction
+
+command! Dark call Dark()
+command! Light call Light()

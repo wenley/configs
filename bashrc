@@ -25,6 +25,9 @@ alias beer="bundle exec rake"
 alias pe="python -m pundle"
 alias python=python3
 
+alias dark_mode="~/.tmux-themes/dark.sh"
+alias light_mode="~/.tmux-themes/light.sh"
+
 function PWD {
   python ~/.python_pwd
 }

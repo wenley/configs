@@ -47,4 +47,9 @@ ln -sf $DIR/python_pwd ~/.python_pwd
 ln -sf $DIR/tmux.conf.local ~/.tmux.conf.local
 ln -sf $DIR/vimrc.local ~/.vimrc.local
 ln -sf $DIR/git-completion.bash ~/.git-completion.bash
+mkdir -p ~/.tmux-themes/
+ln -sf $DIR/tmux-dark.conf ~/.tmux-themes/dark.conf
+ln -sf $DIR/tmux-light.conf ~/.tmux-themes/light.conf
+ln -sf $DIR/tmux-dark.sh ~/.tmux-themes/dark.sh
+ln -sf $DIR/tmux-light.sh ~/.tmux-themes/light.sh
 
