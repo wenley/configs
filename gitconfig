@@ -18,3 +18,5 @@
 	ff = only
 [remote "origin"]
 	prune = true
+[rebase]
+	autosquash = true
