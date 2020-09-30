@@ -13,7 +13,7 @@ alias gcv="git commit --verbose"
 alias gcp="git checkout -p"
 alias gcam="git commit --amend"
 alias grc="git rebase --continue"
-alias grim="git rebase -i master"
+alias grim="git rebase -i main"
 alias grid="git rebase -i development"
 alias gs="git status"
 
