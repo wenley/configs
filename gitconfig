@@ -6,6 +6,7 @@
 	di = diff
 	dic = diff --cached
 	lg = log -p
+	pushf = push --force-with-lease
 [core]
 	editor = /usr/bin/vim
 [push]
