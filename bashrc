@@ -31,6 +31,7 @@ alias sdm="dm | awk '\$2 ~ /_spec.rb$/ { print \$2 }' | xargs bin/rspec"
 # From Gusto
 alias y="d | awk '\$2 ~ /^frontend.*_spec.js/ { print \$2 }' | xargs yarn test"
 alias ready="bundle && yarn && bin/spring stop && bin/rails db:setup && bin/spring start && say ready"
+alias p="d | awk '{ print \$2 }' | cut -d'/' -f1-2 | sort | uniq"
 
 alias pe="python -m pundle"
 alias python=python3
