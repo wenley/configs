@@ -41,6 +41,7 @@ echo "Linking config files"
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 ln -sf $DIR/bashrc ~/.bashrc
+ln -sf $DIR/zshrc ~/.zshrc
 ln -sf $DIR/bash_profile ~/.bash_profile
 ln -sf $DIR/gitconfig ~/.gitconfig
 ln -sf $DIR/python_pwd ~/.python_pwd
