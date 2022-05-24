@@ -17,6 +17,8 @@ alias grim="git rebase -i main"
 alias grid="git rebase -i development"
 alias gs="git status"
 
+alias d="git diff main...HEAD --name-status"
+
 # Ruby things
 alias be="bundle exec"
 alias bees="bundle exec rspec"
