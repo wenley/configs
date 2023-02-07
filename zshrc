@@ -28,12 +28,8 @@ alias python=python3
 alias dark_mode="~/.tmux-themes/dark.sh"
 alias light_mode="~/.tmux-themes/light.sh"
 
-function PWD {
-  python ~/.python_pwd
-}
-
 autoload -U colors && colors
-PS1="$USER@%m $(PWD)%{$fg[green]%}$(__git_ps1 " %s")%{$reset_color%} \$ "
+PS1="$USER@%m %2d %{$fg[green]%}$(__git_ps1 " %s")%{$reset_color%} \$ "
 
 PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
 VISUAL=/usr/bin/vim
