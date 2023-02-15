@@ -5,6 +5,7 @@ source ~/.git-prompt.sh
 alias l="ls -la"
 alias c="clear"
 alias v="vim"
+alias d="git diff main...HEAD --name-status"
 
 alias gap="git add -p"
 alias gb="git branch"
