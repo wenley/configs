@@ -8,7 +8,7 @@ brew install gpg
 
 echo
 echo "Getting applications..."
-brew cask install rectangle
+brew install --cask rectangle
 
 echo
 echo "Checking rvm version..."
