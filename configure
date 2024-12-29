@@ -10,22 +10,6 @@ echo
 echo "Getting applications..."
 brew install --cask rectangle
 
-echo
-echo "Checking rvm version..."
-rvm_version=$(rvm version | cut -d ' ' -f 2 | tr -d '\n')
-if [[ -z "$rvm_version" ]]; then
-  echo "Installing rvm..."
-  gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-  \curl -sSL https://get.rvm.io | bash -s stable --ruby
-else
-  if [[ "$rvm_version" < "1.26" ]]; then
-    echo "Updating rvm..."
-    # Add gpg key for verifying RVM
-    gpg --keyserver hkp://keys.ghupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-    rvm get stable
-  fi
-fi
-
 # Get git-prompt.sh
 echo
 if [ ! -f ~/.git-prompt.sh ]; then

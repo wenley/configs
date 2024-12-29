@@ -33,11 +33,8 @@ autoload -U colors && colors
 setopt PROMPT_SUBST
 PS1='$USER@%m %2d %{$fg[green]%}$(__git_ps1 "%s")%{$reset_color%} \$ '
 
-PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
 VISUAL=/usr/bin/vim
 EDITOR=/usr/bin/vim
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 if [ $(ps ax | grep "[s]sh-agent" | wc -l) -eq 0 ] ; then
     eval $(ssh-agent -s) > /dev/null
