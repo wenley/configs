@@ -5,6 +5,7 @@ brew install wget
 brew install gpg
 # brew install objective-caml
 # brew install opam
+brew install rbenv
 
 echo
 echo "Getting applications..."
