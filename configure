@@ -1,5 +1,14 @@
 #!/bin/bash
 
+if ! command -v brew 2>&1 >/dev/null
+then
+  echo "Did not find brew. Installing..."
+  bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  exit 1
+else
+  echo "Found brew. Continuing"
+fi
+
 echo "Getting command-line utilities..."
 brew install wget
 brew install gpg

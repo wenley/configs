@@ -1,4 +1,7 @@
 
+# Make Homebrew folder part of path
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 source ~/.git-prompt.sh
 
 # From working at Square, Summer 2013
